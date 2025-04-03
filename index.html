@@ -1,22 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista con localStorage</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Lista de Tareas</h1>
-        <div class="input-container">
-            <input type="text" id="tareaInput" placeholder="Tarea">
-            <button type="button" onclick="agregarTarea()"> Agregar </button>
-            <button  type="button" onclick="eliminarTarea()"> Eliminar</button>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Exterminador de Mounstros</title>
+  </head>
+  <body>
+    <div id="background">
+      <div id="game">
+        <div id="stats">
+          <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
+          <span class="stat">Salud: <strong><span id="healthText">150</span></strong></span>
+          <span class="stat">Oro: <strong><span id="goldText">100</span></strong></span>
         </div>
-        <ul id="listaTareas"></ul>
-
-
-    </div>
+        <div id="controls">
+          <button id="button1">Ir a la tienda</button>
+          <button id="button2">Ir a la cueva</button>
+          <button id="button3">Luchar contra el dragón</button>
+        </div>
+        <div id="monsterStats">
+          <span class="stat">Nombre del Monstruo: <strong><span id="monsterName"></span></strong></span>
+          <span class="stat">Salud: <strong><span id="monsterHealth"></span></strong></span>
+        </div>
+        <div id="text">
+          Bienvenido a Dragon Repeller. Debes derrotar al dragón que impide que la gente salga del pueblo. Estás en la plaza del pueblo. ¿A dónde quieres ir? Usa los botones de arriba.
+        </div>
+      </div>
+    </div> 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
